@@ -8,7 +8,6 @@ import PromotionField from './FormFieldsTemplates/PromotionField.vue'
 import CommentField from './FormFieldsTemplates/CommentField.vue'
 import SubmitButton from './FormFieldsTemplates/SubmitButton.vue'
 import ResetButton from './FormFieldsTemplates/ResetButton.vue'
-import { ref } from 'vue'
 
 const promoObject = {
   '': 'Без акции',
@@ -19,7 +18,6 @@ const promoObject = {
   drink: 'Пьяный полдник',
   vegan: 'Веганы'
 }
-
 
 </script>
 
@@ -45,24 +43,13 @@ const promoObject = {
         <SubmitButton />
 
         <ResetButton />
+        
       </form>
     </div>
   </main>
 </template>
 
 <style scoped>
-.visually-hidden {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  margin: -1px !important;
-  border: 0 !important;
-  padding: 0 !important;
-  white-space: nowrap !important;
-  clip-path: inset(100%) !important;
-  clip: rect(0 0 0 0) !important;
-  overflow: hidden !important;
-}
 
 .main {
   display: flex;
